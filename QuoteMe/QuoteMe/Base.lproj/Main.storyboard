@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r53-U7-6RD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Quote Me-->
+        <scene sceneID="xUy-B4-ElU">
+            <objects>
+                <viewController id="gI4-QX-o60" customClass="QuoteViewController" customModule="QuoteMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IKQ-hp-hSw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="BGImage" image="496ecb14589707.562865d064f9e" translatesAutoresizingMaskIntoConstraints="NO" id="I3o-4Z-5V7" userLabel="BGImage">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Background Image." identifier="BGImage" label="BGImage"/>
+                                <attributedString key="userComments">
+                                    <fragment content="BGImage"/>
+                                </attributedString>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="InspiredByPersonLabel" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="6" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fcM-eX-duH" userLabel="InspiredByPersonLabel">
+                                <rect key="frame" x="242" y="126" width="111" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Inspired By Person Label" identifier="InspiredByPersonLabel" label="InspiredByPersonLabel"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999403953552" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="InspiredByPersonImage" translatesAutoresizingMaskIntoConstraints="NO" id="oSt-ru-ZXG" userLabel="InspiredByPersonImage">
+                                <rect key="frame" x="23" y="117" width="210" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Inspired By Person Image." identifier="InspiredByPersonImage" label="InspiredByPersonImage"/>
+                                <attributedString key="userComments">
+                                    <fragment content="InspiredByPersonImage"/>
+                                </attributedString>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="QuoteLabel" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fCM-d9-9cC" userLabel="QuoteLabel">
+                                <rect key="frame" x="23" y="289" width="330" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.1578395215" green="0.42523597670000002" blue="0.1100425449" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" hint="Quote Label." identifier="QuoteLabel" label="QuoteLabel"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.1578395215" green="0.42523597670000002" blue="0.1100425449" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="InspireMeButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hu-kp-1El" userLabel="InspireMeButton">
+                                <rect key="frame" x="71" y="594" width="235" height="48"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" hint="InspireMeButton" identifier="InspireMeButton" label="InspireMeButton"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                <state key="normal" title="Inspire Me">
+                                    <color key="titleColor" red="0.44523233179999999" green="0.1953816712" blue="0.60787641999999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="InspireMeButtonTap:" destination="gI4-QX-o60" eventType="touchUpInside" id="GdO-eH-oFV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="PQ5-ku-f8O"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quote Me" id="PNp-T9-reU"/>
+                    <connections>
+                        <outlet property="InspireMeButton" destination="4hu-kp-1El" id="Bfh-bB-VF6"/>
+                        <outlet property="InspiredByLabel" destination="fcM-eX-duH" id="GiS-MG-hKd"/>
+                        <outlet property="PersonImageView" destination="oSt-ru-ZXG" id="rKt-fq-TA3"/>
+                        <outlet property="QuoteLabel" destination="fCM-d9-9cC" id="OfY-5N-Nx9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jT0-hM-XgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3712.5" y="501.25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X7H-HJ-qt4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r53-U7-6RD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QMk-8b-HJv">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.51958382129669189" green="0.54811453819274902" blue="0.89415580034255981" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gI4-QX-o60" kind="relationship" relationship="rootViewController" id="Uzj-mE-9DN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ce-4U-duZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2716.875" y="502.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="496ecb14589707.562865d064f9e" width="600" height="1064"/>
+    </resources>
+</document>
